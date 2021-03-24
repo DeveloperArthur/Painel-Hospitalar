@@ -1,0 +1,28 @@
+* {
+    color: red;
+}
+
+.lado-esquerdo-cima{
+    margin-left: 300px;
+    margin-top: 200px;
+    float:left;
+}
+
+.lado-esquerdo-cima > h1{
+    font-size: 80px;
+}
+
+.lado-direito-cima{
+    width: 40%;
+    float:right;
+    border: 1px solid red;
+}
+
+.baixo {
+    margin-left: 550px;
+    margin-top: 450px;
+}
+
+.baixo > h1{
+    font-size: 70px;
+}

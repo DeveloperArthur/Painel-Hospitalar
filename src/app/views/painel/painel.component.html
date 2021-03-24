@@ -1,0 +1,16 @@
+<div class="lado-esquerdo-cima">
+    <h1>SENHA {{senhaAtual}}</h1>
+</div>
+<div class="lado-direito-cima">
+    <h1>Senhas que já foram chamadas</h1>
+    <mat-list role="list" *ngFor="let paciente of pacientesChamados">
+        <mat-list-item role="listitem">
+            <h2>{{paciente.senha}}</h2>
+        </mat-list-item>
+    </mat-list>
+</div>
+<br>
+<div class="baixo">
+    <h1>SALA {{sala}}</h1>
+</div>
+<app-footer></app-footer>
