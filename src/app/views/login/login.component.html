@@ -1,0 +1,19 @@
+<div align="center">
+    <h1>Login</h1>
+    <form class="example-form" [formGroup]="credenciaisForm">
+        <p>
+            <mat-form-field class="example-full-width">
+                <mat-label>Digite seu usuário</mat-label>
+                <input matInput placeholder="usuário" formControlName="usuario" name="usuario">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field class="example-full-width">
+                <mat-label>Digite sua senha</mat-label>
+                <input type="password" matInput placeholder="senha" formControlName="senha" name="senha">
+            </mat-form-field>
+        </p>
+        <button mat-raised-button color="primary" (click)="fazLogin()">Entrar</button>
+    </form>
+</div>
+<app-footer></app-footer>
