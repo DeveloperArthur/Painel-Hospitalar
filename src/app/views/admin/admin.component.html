@@ -1,0 +1,36 @@
+<div class="lado-esquerdo">
+    <h2>Senhas chamadas</h2>
+    <mat-list role="list" *ngFor="let paciente of pacientesChamados">
+        <mat-list-item role="listitem">
+            {{paciente.senha}}
+            <a href="">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">close</mat-icon>
+            </a>
+        </mat-list-item>
+    </mat-list>
+    <h3>(Clique no <strong>X</strong> para deletar uma senha do Painel)</h3>
+</div>
+
+<div class="lado-direito">
+    <h2>Preencha o formulário abaixo para chamar um novo paciente.</h2>
+    <form class="example-form" [formGroup]="pacienteForm">
+        <p>
+            <mat-form-field appearance="legacy">
+                <mat-label>Senha que deseja chamar</mat-label>
+                <input matInput placeholder="" formControlName="senha" name="senha">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="legacy">
+                <mat-label>Sala para esta senha</mat-label>
+                <input matInput placeholder="" formControlName="sala" name="sala">
+            </mat-form-field>
+        </p>
+        <button mat-raised-button color="primary" (click)="chamaPaciente()">Chamar</button>
+        <br><br>
+        <button mat-icon-button color="primary" (click)="navegaParaPainel()">
+            <mat-icon>add_to_queue</mat-icon> Ver Painel
+        </button>
+    </form>
+</div>
+<app-footer></app-footer>

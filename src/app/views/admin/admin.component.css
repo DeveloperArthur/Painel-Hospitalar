@@ -1,0 +1,11 @@
+.lado-esquerdo {
+    width: 40%;
+    float:left;
+    border: 1px solid black;
+}
+
+.lado-direito {
+    width: 40%;
+    float:right;
+}
+
